@@ -58,21 +58,21 @@ function initActionMenu() {
 		title : 'Add',
 		image : 'images/add.png',
 		onclick : function() {
-			toastMessage.show('Add menu clicked');
+			toastMessage.show('Add menu clicked', 500);
 		}
 	}, {
 		name : 'edit_item',
 		title : 'Edit',
 		image : 'images/edit.png',
 		onclick : function() {
-			toastMessage.show('Edit menu clicked');
+			toastMessage.show('Edit menu clicked', 500);
 		}
 	}, {
 		name : 'delete_item',
 		title : 'Delete',
 		image : 'images/delete.png',
 		onclick : function() {
-			toastMessage.show('Delete menu clicked');
+			toastMessage.show('Delete menu clicked', 500);
 		}
 	} ]);
 }

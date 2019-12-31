@@ -12,10 +12,13 @@
 	background-position: bottom;
 }
 
+/*
+	border-radius: 25px;
+
+*/
 .input-content {
 	background: rgb(112, 112, 112);
 	border: none;
-	border-radius: 25px;
 	width: 80%;
 	height: 100%;
 	margin: auto;
@@ -29,9 +32,11 @@
 	background: rgba(0, 0, 0, 0);
 }
 
+/*
+padding: 10px 10px 55px 10px;
+*/
 input[type="text"].input-area {
-	width: 78%;
-	padding: 10px 10px 55px 10px;
+	width: 68%;
 	overflow: visible;
 }
 
@@ -41,12 +46,14 @@ textarea.input-area {
 	padding: 10px 10px 55px 10px;
 }
 
+/*border-radius: 25px;
+	background: rgb(112, 112, 112);*/
 .input-area {
 	position: relative;
-	background: rgb(112, 112, 112);
+
 	color: white;
 	width: 100%;
-	border-radius: 25px;
+	
 	border: none;
 	resize: none;
 	word-break: break-all;
@@ -54,10 +61,11 @@ textarea.input-area {
 	text-align: left;
 }
 
+
 .input-area-active {
 	background: rgba(0, 0, 0, 0);
 	border-radius: 0px;
-	width: 55%;
+	width: 40%;
 	top: 30px;
 	left: 80px;
 	padding-right: 80px;
@@ -66,7 +74,7 @@ textarea.input-area {
 }
 
 input[type="text"].input-area-active {
-	padding: 0px;
+	padding: 20px;
 	word-wrap: normal;
 	word-break: normal;
 }

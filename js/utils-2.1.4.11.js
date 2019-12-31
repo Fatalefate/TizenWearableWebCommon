@@ -196,6 +196,7 @@ var GearModel = {
 	'GEAR_S3' : 4,
 	'GEAR_FIT2' : 5,
 	'GEAR_SPORT' : 6,
+	'GEAR_WATCH_ACTIVE_2' : 7,
 	properties : {
 		0 : {
 			name : "gear_1",
@@ -231,6 +232,11 @@ var GearModel = {
 			name : 'gear_sport',
 			value : 6,
 			code : 'gs'
+		},
+		7 : {
+			name : 'gear_watch_active_2',
+			value : 7,
+			code : 'ga2'
 		}
 	}
 };
@@ -498,6 +504,9 @@ Utils.getGearVersion = function(model) {
 		return GearModel.GEAR_FIT2;
 	case "SM-R600":
 		return GearModel.GEAR_SPORT;
+	case "SM-R820":
+	case "SM-R830":
+		return GearModel.GEAR_WATCH_ACTIVE_2;
 	default:
 		return GearModel.GEAR_S3;
 	}

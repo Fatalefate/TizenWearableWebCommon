@@ -321,11 +321,28 @@ Input.prototype.open = function(text, placeholder, mode, ontext, oncancel, onerr
 		this.oncancel = oncancel;
 
 		var processInputEnter = function(evt){
+			
 			if (self.mode === KeyboardModes.SINGLE_LINE){
 				if (evt.which === 13){
 					self.getText();
+					return;
 				}
-			}			
+			}				
+			
+			switch(Utils.getGearVersion(self.model)){
+				case GearModel.GEAR_WATCH_ACTIVE_2:
+					if (evt.which === 8){
+						var text = self.getInputField().val();
+						if (text.length === 0){
+							return;
+						}
+						self.getInputField().val(text.substring(0, text.length - 1));
+						return;
+					}
+					self.getInputField().val(self.getInputField().val() + evt.key);
+					break;
+			}
+			
 		};
 		
 		
